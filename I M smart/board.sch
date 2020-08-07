@@ -17714,6 +17714,28 @@ NS Package M08A</description>
 <attribute name="MPN" value="LR0204F100K"/>
 <attribute name="OC_FARNELL" value="2329853"/>
 </part>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MF" value="TE CONNECTIVITY"/>
+<attribute name="MPN" value="LR0204F100K"/>
+<attribute name="OC_FARNELL" value="2329853"/>
+</part>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="100K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MF" value="TE CONNECTIVITY"/>
+<attribute name="MPN" value="LR0204F100K"/>
+<attribute name="OC_FARNELL" value="2329853"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -17875,11 +17897,11 @@ NS Package M08A</description>
 <attribute name="MF" x="35.56" y="99.06" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="35.56" y="99.06" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="P+1" gate="1" x="7.62" y="149.86" smashed="yes">
-<attribute name="VALUE" x="5.08" y="144.78" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="1" x="2.54" y="149.86" smashed="yes">
+<attribute name="VALUE" x="0" y="144.78" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P-2" gate="1" x="7.62" y="99.06" smashed="yes">
-<attribute name="VALUE" x="5.08" y="96.52" size="1.778" layer="96" rot="R90"/>
+<instance part="P-2" gate="1" x="2.54" y="99.06" smashed="yes">
+<attribute name="VALUE" x="0" y="96.52" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND1" gate="1" x="12.7" y="127" smashed="yes">
 <attribute name="VALUE" x="10.16" y="124.46" size="1.778" layer="96"/>
@@ -17952,6 +17974,20 @@ NS Package M08A</description>
 <attribute name="MPN" x="111.76" y="134.62" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC1" gate="P" x="73.66" y="27.94" smashed="yes"/>
+<instance part="R8" gate="G$1" x="7.62" y="144.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.43" y="143.2814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="11.43" y="148.082" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_FARNELL" x="7.62" y="144.78" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="7.62" y="144.78" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="7.62" y="144.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R9" gate="G$1" x="7.62" y="104.14" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.43" y="102.6414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="11.43" y="107.442" size="1.778" layer="96" rot="R180"/>
+<attribute name="OC_FARNELL" x="7.62" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="7.62" y="104.14" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="7.62" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18013,10 +18049,9 @@ NS Package M08A</description>
 <junction x="73.66" y="40.64"/>
 </segment>
 <segment>
-<pinref part="IN1" gate="G$1" pin="3"/>
-<wire x1="15.24" y1="144.78" x2="7.62" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="144.78" x2="7.62" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="144.78" x2="2.54" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -18038,10 +18073,9 @@ NS Package M08A</description>
 <junction x="73.66" y="15.24"/>
 </segment>
 <segment>
-<pinref part="IN2" gate="G$1" pin="3"/>
-<wire x1="15.24" y1="104.14" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="104.14" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="104.14" x2="2.54" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="P-2" gate="1" pin="-12V"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -18285,6 +18319,20 @@ NS Package M08A</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="VR3" gate="G$1" pin="S"/>
 <wire x1="116.84" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="IN2" gate="G$1" pin="3"/>
+<wire x1="12.7" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="IN1" gate="G$1" pin="3"/>
+<wire x1="12.7" y1="144.78" x2="15.24" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

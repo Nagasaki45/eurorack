@@ -1,5 +1,7 @@
 # I M smart
 
+![module front](module.jpg)
+
 ## Utility mixer with some nice extras in 4 hp
 
 - 3 channels mixer

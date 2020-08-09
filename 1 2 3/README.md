@@ -1,5 +1,7 @@
 # 1 2 3
 
+![module front](module.jpg)
+
 ## An 8 steps resettable sequencial clock in 4 hp
 
 Useful references:

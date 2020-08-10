@@ -4,7 +4,13 @@
 
 ## 8 steps resettable sequencial clock in 4 hp
 
-Useful references:
+## Specs
+
+- Width: 4hp
+- Depth: 44mm
+- Power: 29mA @ 12V / 16mA @ -12V
+
+## Useful references
 
 - [Ken Stone's gate sequencer](https://www.elby-designs.com/webtek/cgs/cgs89/cgs89_gate_sequencer.html)
 - [Ken Stone's gate to trigger](https://www.muffwiggler.com/forum/viewtopic.php?t=46926)

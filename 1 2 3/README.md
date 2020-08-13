@@ -4,6 +4,8 @@
 
 ## 8 steps resettable sequencial clock in 4 hp
 
+With a clock going into the CLK input output 1 to 8 will go high one at a time. A reset input or a button can reset the sequence back to the 1st step. The outputs are designed to be mixed with simple passive multiples. No need for additional OR logic / gate combiner. For example, try to connect output 1 and 3 to a passive multiple or stackable and also to a kick drum trigger input, and output 5 and 8 in a similar fashion to a snare trigger input. Got the idea? The module can also work in audio rate to produce various sub-octaves and sync effects.
+
 ## Specs
 
 - Width: 4hp

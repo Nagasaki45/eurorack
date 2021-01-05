@@ -6,12 +6,10 @@
 #define MIDI_CLOCK_TICK 0xF8
 
 #define SOFT_VCC_PIN 6
-#define RUNNING_PIN 12
 #define MIDI_RUNNING_PIN 10
 #define TEMPO_PIN A0
 #define CLOCK_PIN 3
 
-bool isRunning = false;
 bool isMidiRunning = false;
 bool isMidiWaiting = false;
 
@@ -43,25 +41,6 @@ void stopMidi() {
   isMidiWaiting = false;
 }
 
-void stopEverything() {
-  uClock.stop();
-  stopMidi();
-  digitalWrite(CLOCK_PIN, LOW);
-  isRunning = false;
-}
-
-void updateRunning() {
-  int runningSwitchState = digitalRead(RUNNING_PIN);
-  if (runningSwitchState != isRunning) {
-    if (isRunning) {
-      stopEverything();
-    } else {
-      isRunning = true;
-      uClock.start();
-    }
-  }
-}
-
 void updateMidiRunning() {
   int midiRunningSwitchState = digitalRead(MIDI_RUNNING_PIN);
   if (midiRunningSwitchState != isMidiRunning) {
@@ -79,18 +58,15 @@ void setup() {
   pinMode(SOFT_VCC_PIN, OUTPUT);
   digitalWrite(SOFT_VCC_PIN, HIGH);
 
-  pinMode(RUNNING_PIN, INPUT_PULLUP);
   pinMode(MIDI_RUNNING_PIN, INPUT_PULLUP);
   pinMode(CLOCK_PIN, OUTPUT);
   
   uClock.init();
   uClock.setClock96PPQNOutput(clockOutput96PPQN);
+  uClock.start();
 }
 
 void loop() {
   updateTempo();
-  updateRunning();
-  if (isRunning) {
-    updateMidiRunning();
-  }
+  updateMidiRunning();
 }

@@ -20202,17 +20202,11 @@ Source: www.kingbright.com</description>
 <attribute name="OC_FARNELL" value="2329853"/>
 </part>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1">
 <attribute name="MF" value="AMP - TE CONNECTIVITY"/>
 <attribute name="MPN" value="826926-2"/>
 <attribute name="OC_FARNELL" value="1248140"/>
-</part>
-<part name="SW1" library="switch" library_urn="urn:adsk.eagle:library:380" deviceset="TL36PO" device="" package3d_urn="urn:adsk.eagle:package:27745/1" value="SUB-MINI">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="MIDI" library="MusicThingModular" deviceset="THONKI-STEREO" device="">
 <attribute name="MF" value=""/>
@@ -20237,7 +20231,7 @@ Source: www.kingbright.com</description>
 </part>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SW2" library="switch" library_urn="urn:adsk.eagle:library:380" deviceset="TL36PO" device="" package3d_urn="urn:adsk.eagle:package:27745/1" value="SUB-MINI">
+<part name="SW1" library="switch" library_urn="urn:adsk.eagle:library:380" deviceset="TL36PO" device="" package3d_urn="urn:adsk.eagle:package:27745/1" value="SUB-MINI">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -20389,9 +20383,6 @@ alt firmware</text>
 <instance part="GND3" gate="1" x="116.84" y="55.88" smashed="yes">
 <attribute name="VALUE" x="114.3" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="33.02" y="76.2" smashed="yes">
-<attribute name="VALUE" x="30.48" y="73.66" size="1.778" layer="96"/>
-</instance>
 <instance part="IC1" gate="A" x="119.38" y="27.94" smashed="yes">
 <attribute name="NAME" x="121.92" y="31.115" size="1.778" layer="95"/>
 <attribute name="VALUE" x="121.92" y="22.86" size="1.778" layer="96"/>
@@ -20409,12 +20400,6 @@ alt firmware</text>
 <attribute name="OC_FARNELL" x="160.02" y="93.98" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="160.02" y="93.98" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="160.02" y="93.98" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="SW1" gate="BEF1" x="40.64" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.18" y="88.9" size="1.778" layer="95" rot="R180"/>
-<attribute name="OC_FARNELL" x="40.64" y="83.82" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="40.64" y="83.82" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="40.64" y="83.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="MIDI" gate="G$1" x="175.26" y="33.02" smashed="yes" rot="R180">
 <attribute name="NAME" x="180.34" y="29.972" size="1.778" layer="95" rot="R180"/>
@@ -20450,11 +20435,11 @@ alt firmware</text>
 <instance part="GND6" gate="1" x="33.02" y="60.96" smashed="yes">
 <attribute name="VALUE" x="30.48" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="SW2" gate="BEF1" x="40.64" y="68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.18" y="73.66" size="1.778" layer="95" rot="R180"/>
-<attribute name="OC_FARNELL" x="40.64" y="68.58" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="40.64" y="68.58" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="40.64" y="68.58" size="1.778" layer="96" display="off"/>
+<instance part="SW1" gate="BEF1" x="40.64" y="73.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.18" y="78.74" size="1.778" layer="95" rot="R180"/>
+<attribute name="OC_FARNELL" x="40.64" y="73.66" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="40.64" y="73.66" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="40.64" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -20552,12 +20537,6 @@ alt firmware</text>
 <wire x1="116.84" y1="60.96" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="35.56" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="81.28" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="SW1" gate="BEF1" pin="O"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="B" pin="+IN"/>
 <wire x1="111.76" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="15.24" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
@@ -20570,10 +20549,10 @@ alt firmware</text>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="35.56" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="66.04" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="71.12" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="71.12" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="SW2" gate="BEF1" pin="O"/>
+<pinref part="SW1" gate="BEF1" pin="O"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -20644,9 +20623,9 @@ alt firmware</text>
 <label x="96.52" y="58.42" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="45.72" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
-<label x="48.26" y="68.58" size="1.778" layer="95" xref="yes"/>
-<pinref part="SW2" gate="BEF1" pin="P"/>
+<wire x1="45.72" y1="73.66" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
+<label x="48.26" y="73.66" size="1.778" layer="95" xref="yes"/>
+<pinref part="SW1" gate="BEF1" pin="P"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -20748,18 +20727,6 @@ alt firmware</text>
 <wire x1="93.98" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="101.6" y1="86.36" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D12" class="0">
-<segment>
-<pinref part="JP3" gate="G$1" pin="D12"/>
-<wire x1="93.98" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
-<label x="96.52" y="63.5" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="45.72" y1="83.82" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
-<label x="48.26" y="83.82" size="1.778" layer="95" xref="yes"/>
-<pinref part="SW1" gate="BEF1" pin="P"/>
 </segment>
 </net>
 <net name="D3" class="0">

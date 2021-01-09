@@ -20,4 +20,8 @@ A clock module to sync your eurorack and external MIDI gear. The analog clock at
 - Depth: 29mm
 - Power: 29mA @ 12V / <1mA @ -12V
 
+## Build notes
+
+- The LED orientation is not marked on the PCB. The longer (positive) leg should be closer to the edge of the board.
+
 ![electronics view](back.jpg)

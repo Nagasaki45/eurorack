@@ -23,5 +23,7 @@ A clock module to sync your eurorack and external MIDI gear. The analog clock at
 ## Build notes
 
 - The LED orientation is not marked on the PCB. The longer (positive) leg should be closer to the edge of the board.
+- I use an unbranded arduino pro mini 5V 16MHz ATMega328. A pro micro should also work. It's slightly more expensive, but is simpler to work with due to onboard USB connection.
+- The arduino sketch depends on the [midilab's uClock](https://github.com/midilab/uClock) library. Make sure to install it first.
 
 ![electronics view](back.jpg)
